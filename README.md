@@ -2,7 +2,7 @@
 
 Implementación en Python 3.12 de una red social simplificada tipo Twitter orientada a objetos, gestionada con `uv`.
 
-## aracterísticas
+## Características
 
 * **Gestión de usuarios:** Registro, perfiles, búsqueda y relaciones de seguimiento entre usuarios.
 * **Tipos de publicaciones:** Soporte para `Tweet`, `Respuesta` y `Retweet`.
