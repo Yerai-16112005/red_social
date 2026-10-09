@@ -18,7 +18,7 @@ class RedSocial:
 
         red = cls()
         for dic_user in datos["usuarios"]:
-            red.usuarios[dic_user["alias"]] = Usuario.desde_dict(dic_user)
+            red.anadir(Usuario.desde_dict(dic_user))
 
         for quien_sigue, a_quien in datos["seguimientos"]:
             red.usuarios[quien_sigue].seguir(red.usuarios[a_quien])
@@ -54,9 +54,7 @@ class RedSocial:
         return publicacion
 
     def timeline(self, usuario) -> list[Publicacion]:
-        return [
-            p for p in reversed(self.publicaciones) if p.autor in usuario.seguidos
-        ]
+        return [p for p in reversed(self.publicaciones) if p.autor in usuario.seguidos]
 
     def tendencias(self, n: int = 3) -> list[tuple[str, int]]:
         todos_los_hashtags = []

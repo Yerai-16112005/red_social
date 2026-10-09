@@ -1,4 +1,3 @@
-
 import json
 
 from red_social.publicacion import Tweet
@@ -21,15 +20,14 @@ def test_timeline_solo_tiene_publicaciones_de_los_seguidos(red):
     timeline_ana = red.timeline(ana)
     assert timeline_ana == []
 
+
 def test_desde_json_construye_usuarios_y_seguimientos(mocker):
     datos_mock = {
         "usuarios": [
             {"nombre": "Ana", "alias": "@ana"},
             {"nombre": "Luis", "alias": "@luis"},
         ],
-        "seguimientos": [
-            ["@luis", "@ana"] 
-        ],
+        "seguimientos": [["@luis", "@ana"]],
     }
     json_contenido = json.dumps(datos_mock)
 
