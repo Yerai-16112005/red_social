@@ -1,0 +1,12 @@
+{
+  "usuarios": [
+    {"nombre": "Ana", "alias": "@ana"},
+    {"nombre": "Luis", "alias": "@luis"},
+    {"nombre": "Marta", "alias": "@marta"}
+  ],
+  "seguimientos": [
+    ["@luis", "@ana"],
+    ["@marta", "@ana"],
+    ["@marta", "@luis"]
+  ]
+}
