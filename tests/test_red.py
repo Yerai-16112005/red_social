@@ -5,7 +5,6 @@ from red_social.red import RedSocial
 
 
 def test_timeline_solo_tiene_publicaciones_de_los_seguidos(red):
-    # 1. Obtener los usuarios de la fixture red
     ana = red["@ana"]
     luis = red["@luis"]
     marta = red["@marta"]
