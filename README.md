@@ -40,7 +40,7 @@ red_social/
 
 1. Clonar el repositorio:
 ```bash
-  git clone [https://github.com/Yerai-16112005/red_social.git](https://github.com/Yerai-16112005/red_social.git)
+  git clone https://github.com/Yerai-16112005/red_social.git
   cd red_social
 ```
 
