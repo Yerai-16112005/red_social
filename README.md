@@ -1,14 +1,14 @@
 # Red Social - Entrega Final
 
-Implementación en Python 3.12 de una red social simplificada tipo Twitter orientada a objetos, gestionada con `uv`.
+Implementación en Python 3.12 de una red social simplificada tipo Twitter usando programacion orientada a objetos, gestionada con `uv`.
 
 ## Características
 
-* **Gestión de usuarios:** Registro, perfiles, búsqueda y relaciones de seguimiento entre usuarios.
+* **Gestión de usuarios:** Registro y relaciones de seguimiento entre usuarios.
 * **Tipos de publicaciones:** Soporte para `Tweet`, `Respuesta` y `Retweet`.
 * **Hashtags y Tendencias:** Extracción automática de hashtags limpios y cálculo de las tendencias.
 * **Timeline dinámico:** Generación del hilo de publicaciones de usuarios seguidos en orden cronológico inverso.
-* **Persistencia:** Carga inicial de usuarios y relaciones desde archivos JSON (`datos/usuarios.json`).
+* **Carga de datos desde json:** Carga inicial de usuarios y relaciones desde archivos JSON (`datos/usuarios.json`).
 
 ## Estructura del proyecto
 
